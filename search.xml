@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title><![CDATA[hello]]></title>
+    <url>%2F2019%2F01%2F24%2Fhello%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Quick StartCreate a new post1$ hexo new “My New Post”More info: WritingRun server1$ hexo serverMore info: ServerGenerate static files1$ hexo generateMore info: GeneratingDeploy to remote sites1$ hexo deployMore info: Deployment]]></content>
+      <categories>
+        <category>文摘</category>
+      </categories>
+      <tags>
+        <tag>文摘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu 系统下安装 Matlab]]></title>
     <url>%2F2019%2F01%2F24%2FUbuntu%20%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85%20Matlab%2F</url>
-    <content type="text"><![CDATA[Ubuntu 系统下安装 Matlab这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在 home 目录下新建一个文件夹：\begin{lstlisting}[language=]mkdir matlab\end{lstlisting}然后 cd 到你的 Matlab 安装文件所在目录，使用下列命令挂载第一个镜像文件（注意其中的 username 要根据你自己的用户名进行修改）：\begin{lstlisting}[language=]sudo mount -t auto -o loop R2016b_glnxa64_dvd1.iso /home/username/matlab/\end{lstlisting}挂载镜像文件之后，会发现文件系统多了一个盘，说明挂载成功，然后进行安装：\begin{lstlisting}[language=]cd ~sudo /home/username/matlab/install\end{lstlisting}在安装界面起始页，选择“使用文件安装密钥”，然后选择“我已有我的许可证的文件安装密钥”，输入如下序列号：09806-07443-53955-64350-21751-41297（key 在 readme.txt 中可以找到）。在安装进行到大约一半的时候，会弹出一个提示框提示插入 dvd2，这时候需要重新打开一个终端，把 dvd2 挂载到 Matlab 文件夹中：\begin{lstlisting}[language=]sudo umount /home/username/matlabsudo mount -t auto -o loop Linux/R2016b_glnxa64_dvd2.iso /home/username/matlab/\end{lstlisting}然后在对话框中点击 OK，继续安装。完成安装后取消挂载：\begin{lstlisting}[language=]sudo umount /home/username/matlab\end{lstlisting}运行 Matlab，弹出激活对话框：\begin{lstlisting}[language=]cd /usr/local/MATLAB/R2016b/binsudo ./matlab\end{lstlisting}选择用不联网的方法进行激活，加载 license_standalone.lic 文件。完成之后将 Crack 文件夹中的 R2016b/Linux/R2016b/bin/glnxa64 目录下文件复制到 /usr/local/MATLAB/R2016b/bin/glnxa64 目录下：\begin{lstlisting}[language=]sudo chmod -R 777 /usr/local/MATLABsudo cp Crack/R2016b/bin/glnxa64/libcufft.so.7.5.18 /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libinstutil.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwlmgrimpl.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwservices.so /usr/local/MATLAB/R2016b/bin/glnxa64\end{lstlisting}然后设置快捷方式：\begin{lstlisting}[language=]sudo gedit /usr/share/applications/Matlab2016b.desktop\end{lstlisting}在打开的文档中直接粘贴下面的代码：\begin{lstlisting}[language=][Desktop Entry]Encoding=UTF-8Name=Matlab 2016bComment=MatlabExec=/usr/local/MATLAB/R2016b/bin/matlab -desktopIcon=/usr/local/MATLAB/R2016b/toolbox/nnet/nnresource/icons/matlab.pngTerminal=trueStartupNotify=trueType=ApplicationCategories=Application;\end{lstlisting} \begin{flushright}更新于 2018/08/18\end{flushright}]]></content>
+    <content type="text"><![CDATA[这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在 home 目录下新建一个文件夹：\begin{lstlisting}[language=]mkdir matlab\end{lstlisting}然后 cd 到你的 Matlab 安装文件所在目录，使用下列命令挂载第一个镜像文件（注意其中的 username 要根据你自己的用户名进行修改）：\begin{lstlisting}[language=]sudo mount -t auto -o loop R2016b_glnxa64_dvd1.iso /home/username/matlab/\end{lstlisting}挂载镜像文件之后，会发现文件系统多了一个盘，说明挂载成功，然后进行安装：\begin{lstlisting}[language=]cd ~sudo /home/username/matlab/install\end{lstlisting}在安装界面起始页，选择“使用文件安装密钥”，然后选择“我已有我的许可证的文件安装密钥”，输入如下序列号：09806-07443-53955-64350-21751-41297（key 在 readme.txt 中可以找到）。在安装进行到大约一半的时候，会弹出一个提示框提示插入 dvd2，这时候需要重新打开一个终端，把 dvd2 挂载到 Matlab 文件夹中：\begin{lstlisting}[language=]sudo umount /home/username/matlabsudo mount -t auto -o loop Linux/R2016b_glnxa64_dvd2.iso /home/username/matlab/\end{lstlisting}然后在对话框中点击 OK，继续安装。完成安装后取消挂载：\begin{lstlisting}[language=]sudo umount /home/username/matlab\end{lstlisting}运行 Matlab，弹出激活对话框：\begin{lstlisting}[language=]cd /usr/local/MATLAB/R2016b/binsudo ./matlab\end{lstlisting}选择用不联网的方法进行激活，加载 license_standalone.lic 文件。完成之后将 Crack 文件夹中的 R2016b/Linux/R2016b/bin/glnxa64 目录下文件复制到 /usr/local/MATLAB/R2016b/bin/glnxa64 目录下：\begin{lstlisting}[language=]sudo chmod -R 777 /usr/local/MATLABsudo cp Crack/R2016b/bin/glnxa64/libcufft.so.7.5.18 /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libinstutil.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwlmgrimpl.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwservices.so /usr/local/MATLAB/R2016b/bin/glnxa64\end{lstlisting}然后设置快捷方式：\begin{lstlisting}[language=]sudo gedit /usr/share/applications/Matlab2016b.desktop\end{lstlisting}在打开的文档中直接粘贴下面的代码：\begin{lstlisting}[language=][Desktop Entry]Encoding=UTF-8Name=Matlab 2016bComment=MatlabExec=/usr/local/MATLAB/R2016b/bin/matlab -desktopIcon=/usr/local/MATLAB/R2016b/toolbox/nnet/nnresource/icons/matlab.pngTerminal=trueStartupNotify=trueType=ApplicationCategories=Application;\end{lstlisting} \begin{flushright}更新于 2018/08/18\end{flushright}]]></content>
       <categories>
         <category>Matlab</category>
+        <category>Ubuntu</category>
       </categories>
       <tags>
         <tag>Matlab</tag>
+        <tag>Ubuntu</tag>
       </tags>
   </entry>
 </search>

@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,13 @@
 
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
 
 
 
@@ -51,16 +58,16 @@
 <link rel="stylesheet" href="/css/main.css?v=6.7.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar.png?v=6.7.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico?v=6.7.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=6.7.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+  <link rel="mask-icon" href="/images/avatar.png?v=6.7.0" color="#222">
 
 
 
@@ -74,7 +81,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '6.7.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -96,13 +103,16 @@
 
 
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="Face et fac">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Cluster&#39;s Blog">
 <meta property="og:url" content="https://clusterh.github.io/index.html">
 <meta property="og:site_name" content="Cluster&#39;s Blog">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="Face et fac">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cluster&#39;s Blog">
+<meta name="twitter:description" content="Face et fac">
 
 
 
@@ -162,7 +172,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -187,14 +197,14 @@
     </div>
     
       
-        <p class="site-subtitle">Face et fac</p>
+        <p class="site-subtitle">最重要的是，学会感受生命的快乐</p>
       
     
     
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -222,7 +232,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
 
   </li>
         
@@ -239,7 +249,7 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>Über</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
         
@@ -256,7 +266,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
 
   </li>
         
@@ -273,7 +283,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Kategorien</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
 
   </li>
         
@@ -290,7 +300,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
 
@@ -301,7 +311,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Suche</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
         </li>
       
     </ul>
@@ -321,7 +331,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -371,12 +381,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://clusterh.github.io/2019/01/24/Ubuntu 系统下安装 Matlab/">
+    <link itemprop="mainEntityOfPage" href="https://clusterh.github.io/2019/01/24/hello/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="2BMelon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="description" content="Face et fac">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -391,7 +401,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/24/Ubuntu 系统下安装 Matlab/" class="post-title-link" itemprop="url">Unbenannt</a>
+                <a href="/2019/01/24/hello/" class="post-title-link" itemprop="url">hello</a>
               
             
           </h1>
@@ -409,14 +419,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Post created: 2019-01-24 13:04:40 / Updated at: 13:25:49" itemprop="dateCreated datePublished" datetime="2019-01-24T13:04:40+08:00">2019-01-24</time>
+              <time title="创建时间：2019-01-24 14:11:54 / 修改时间：19:48:15" itemprop="dateCreated datePublished" datetime="2019-01-24T14:11:54+08:00">2019-01-24</time>
             
 
             
@@ -435,10 +445,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Matlab/" itemprop="url" rel="index"><span itemprop="name">Matlab</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/文摘/" itemprop="url" rel="index"><span itemprop="name">文摘</span></a></span>
 
                 
                 
@@ -474,13 +484,191 @@
 
       
         
-          <p>Ubuntu 系统下安装 Matlab<br>这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{<a href="https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在" target="_blank" rel="noopener">https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在</a> home 目录下新建一个文件夹：<br>\begin{lstlisting}[language=]<br>mkdir matlab<br>\end{lstlisting}<br>然后 cd 到你的 Matlab 安装文件所在目录，使用下列命令挂载第一个镜像文件（注意其中的 username 要根据你自己的用户名进行修改）：<br>\begin{lstlisting}[language=]<br>sudo mount -t auto -o loop R2016b_glnxa64_dvd1.iso /home/username/matlab/<br>\end{lstlisting}<br>挂载镜像文件之后，会发现文件系统多了一个盘，说明挂载成功，然后进行安装：<br>\begin{lstlisting}[language=]<br>cd ~<br>sudo /home/username/matlab/install<br>\end{lstlisting}<br>在安装界面起始页，选择“使用文件安装密钥”，然后选择“我已有我的许可证的文件安装密钥”，输入如下序列号：09806-07443-53955-64350-21751-41297（key 在 readme.txt 中可以找到）。在安装进行到大约一半的时候，会弹出一个提示框提示插入 dvd2，这时候需要重新打开一个终端，把 dvd2 挂载到 Matlab 文件夹中：<br>\begin{lstlisting}[language=]<br>sudo umount /home/username/matlab<br>sudo mount -t auto -o loop Linux/R2016b_glnxa64_dvd2.iso /home/username/matlab/<br>\end{lstlisting}<br>然后在对话框中点击 OK，继续安装。完成安装后取消挂载：<br>\begin{lstlisting}[language=]<br>sudo umount /home/username/matlab<br>\end{lstlisting}<br>运行 Matlab，弹出激活对话框：<br>\begin{lstlisting}[language=]<br>cd /usr/local/MATLAB/R2016b/bin<br>sudo ./matlab<br>\end{lstlisting}<br>选择用不联网的方法进行激活，加载 license_standalone.lic 文件。完成之后将 Crack 文件夹中的 R2016b/Linux/R2016b/bin/glnxa64 目录下文件复制到 /usr/local/MATLAB/R2016b/bin/glnxa64 目录下：<br>\begin{lstlisting}[language=]<br>sudo chmod -R 777 /usr/local/MATLAB<br>sudo cp Crack/R2016b/bin/glnxa64/libcufft.so.7.5.18 /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libinstutil.so /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libmwlmgrimpl.so /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libmwservices.so  /usr/local/MATLAB/R2016b/bin/glnxa64<br>\end{lstlisting}<br>然后设置快捷方式：<br>\begin{lstlisting}[language=]<br>sudo gedit /usr/share/applications/Matlab2016b.desktop<br>\end{lstlisting}<br>在打开的文档中直接粘贴下面的代码：<br>\begin{lstlisting}[language=]<br>[Desktop Entry]<br>Encoding=UTF-8<br>Name=Matlab 2016b<br>Comment=Matlab<br>Exec=/usr/local/MATLAB/R2016b/bin/matlab -desktop<br>Icon=/usr/local/MATLAB/R2016b/toolbox/nnet/nnresource/icons/matlab.png<br>Terminal=true<br>StartupNotify=true<br>Type=Application<br>Categories=Application;<br>\end{lstlisting}</p>
+          
+            <p>
+              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pro
+              ...
+            </p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/24/hello/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://clusterh.github.io/2019/01/24/Ubuntu 系统下安装 Matlab/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="2BMelon">
+      <meta itemprop="description" content="Face et fac">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cluster's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/24/Ubuntu 系统下安装 Matlab/" class="post-title-link" itemprop="url">Ubuntu 系统下安装 Matlab</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-24 13:04:40 / 修改时间：19:47:11" itemprop="dateCreated datePublished" datetime="2019-01-24T13:04:40+08:00">2019-01-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Matlab/" itemprop="url" rel="index"><span itemprop="name">Matlab</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Matlab/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{<a href="https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在" target="_blank" rel="noopener">https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在</a> home 目录下新建一个文件夹：<br>\begin{lstlisting}[language=]<br>mkdir matlab<br>\end{lstlisting}<br>然后 cd 到你的 Matlab 安装文件所在目录，使用下列命令挂载第一个镜像文件（注意其中的 username 要根据你自己的用户名进行修改）：<br>\begin{lstlisting}[language=]<br>sudo mount -t auto -o loop R2016b_glnxa64_dvd1.iso /home/username/matlab/<br>\end{lstlisting}<br>挂载镜像文件之后，会发现文件系统多了一个盘，说明挂载成功，然后进行安装：<br>\begin{lstlisting}[language=]<br>cd ~<br>sudo /home/username/matlab/install<br>\end{lstlisting}<br>在安装界面起始页，选择“使用文件安装密钥”，然后选择“我已有我的许可证的文件安装密钥”，输入如下序列号：09806-07443-53955-64350-21751-41297（key 在 readme.txt 中可以找到）。在安装进行到大约一半的时候，会弹出一个提示框提示插入 dvd2，这时候需要重新打开一个终端，把 dvd2 挂载到 Matlab 文件夹中：<br>\begin{lstlisting}[language=]<br>sudo umount /home/username/matlab<br>sudo mount -t auto -o loop Linux/R2016b_glnxa64_dvd2.iso /home/username/matlab/<br>\end{lstlisting}<br>然后在对话框中点击 OK，继续安装。完成安装后取消挂载：<br>\begin{lstlisting}[language=]<br>sudo umount /home/username/matlab<br>\end{lstlisting}<br>运行 Matlab，弹出激活对话框：<br>\begin{lstlisting}[language=]<br>cd /usr/local/MATLAB/R2016b/bin<br>sudo ./matlab<br>\end{lstlisting}<br>选择用不联网的方法进行激活，加载 license_standalone.lic 文件。完成之后将 Crack 文件夹中的 R2016b/Linux/R2016b/bin/glnxa64 目录下文件复制到 /usr/local/MATLAB/R2016b/bin/glnxa64 目录下：<br>\begin{lstlisting}[language=]<br>sudo chmod -R 777 /usr/local/MATLAB<br>sudo cp Crack/R2016b/bin/glnxa64/libcufft.so.7.5.18 /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libinstutil.so /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libmwlmgrimpl.so /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libmwservices.so  /usr/local/MATLAB/R2016b/bin/glnxa64<br>\end{lstlisting}<br>然后设置快捷方式：<br>\begin{lstlisting}[language=]<br>sudo gedit /usr/share/applications/Matlab2016b.desktop<br>\end{lstlisting}<br>在打开的文档中直接粘贴下面的代码：<br>\begin{lstlisting}[language=]<br>[Desktop Entry]<br>Encoding=UTF-8<br>Name=Matlab 2016b<br>Comment=Matlab<br>Exec=/usr/local/MATLAB/R2016b/bin/matlab -desktop<br>Icon=/usr/local/MATLAB/R2016b/toolbox/nnet/nnresource/icons/matlab.png<br>Terminal=true<br>StartupNotify=true<br>Type=Application<br>Categories=Application;<br>\end{lstlisting}</p>
 <p>\begin{flushright}<br>更新于 2018/08/18<br>\end{flushright}</p>
           <!--noindex-->
           
             <div class="post-button text-center">
               <a class="btn" href="/2019/01/24/Ubuntu 系统下安装 Matlab/#more" rel="contents">
-                Weiterlesen &raquo;
+                阅读全文 &raquo;
               </a>
             </div>
           
@@ -556,8 +744,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="2BMelon">
+            
               <p class="site-author-name" itemprop="name">2BMelon</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Face et fac</p>
           </div>
 
           
@@ -567,8 +757,8 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
@@ -582,8 +772,12 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
               
@@ -597,8 +791,12 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">Tags</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
               
@@ -615,10 +813,72 @@
           
 
           
-
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/ClusterH" title="GitHub &rarr; https://github.com/ClusterH" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:zh.zo@foxmai" title="E-Mail &rarr; mailto:zh.zo@foxmai" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/ClusterZH?s=09" title="Twitter &rarr; https://twitter.com/ClusterZH?s=09" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.zhihu.com/people/ghostinthesnow1927/activities" title="知乎 &rarr; https://www.zhihu.com/people/ghostinthesnow1927/activities" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>知乎</a>
+                </span>
+              
+            </div>
           
 
           
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.google.com/" title="https://www.google.com/" rel="noopener" target="_blank">google</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -631,6 +891,13 @@
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -645,7 +912,7 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">2BMelon</span>
 
@@ -655,7 +922,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
@@ -663,7 +930,7 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.7.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.7.0</div>
 
 
 
@@ -681,11 +948,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -715,6 +977,12 @@
 
 
 
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
