@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hello]]></title>
-    <url>%2F2019%2F01%2F24%2Fhello%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Quick StartCreate a new post1$ hexo new “My New Post”More info: WritingRun server1$ hexo serverMore info: ServerGenerate static files1$ hexo generateMore info: GeneratingDeploy to remote sites1$ hexo deployMore info: Deployment]]></content>
+    <title><![CDATA[404]]></title>
+    <url>%2F2019%2F01%2F25%2F404%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[LaTeX]]></title>
+    <url>%2F2019%2F01%2F24%2FLaTeX%2F</url>
+    <content type="text"><![CDATA[如果要问我写这样一份笔记的动机，说起来其实很简单，随着我在学习和生活过程中接触到的专业知识以及各种信息等越来越多，而自己的记忆力也算不上好，大脑在处理一些问题时也常常捉襟见肘，我愈发觉得有必要将我所接触和学习到的各种内容进行分类和整合，因为平时接触了大量的知识以及信息碎片，如果不适当加以处理，它们只会越积越多，可能在需要的时候不但起不了很大的作用，而且会与其他新学习的知识和信息混杂在一起，让自己的知识体系无法搭建起来，也让大脑变得异常混乱，于是我就想着将这些知识和信息记录下来。 说起来自己以前也写过不少文字，然而长久以来自己没有太过关注这些笔记，加上时间久了之后各式各样的笔记内容也混杂不堪，最后也没有多少有用的东西留存下来。我相信真正的写作可以锻炼人的思维能力，只有当自己真正动笔写一些正式的文章时才会发觉自己的思想是有多么贫瘠，逻辑链是有多么短小而脆弱，这也曾一度使我对自己过去所做的很多事情产生了怀疑，迫使我变得警觉起来。另外，形成于大脑里的想法和真正写出来的文字差别往往会很大，而从想法到文字的过程则是对自己混乱思绪的整理过程，记录成文字形式有助于梳理自己所做过的事情，也有助于训练大脑的逻辑思维能力。我觉得通过一个人的文字是可以看出其很多东西的。写书，或者说是写笔记，说起来是很简单的事情，但做起来却又是另一回事了，直到真正开始动笔我才意识到这一项任务的工作量有多么大，也很后悔自己没有早几年开始做这件事情，比如在高中或者大一的时候，不过再仔细地想一想，限于当时的环境以及自身水平等情况，这也是不太现实的事情，不过呢，现在开始这项工作也不算太晚。如果将个体看做一个系统，只输入而不输出的系统只怕算不上一个真正有价值的系统，说得夸张一点，这样的系统是世界的垃圾桶（这里并不包含恶意）。过去我虽然算是有过极少的输出，大部分也仅仅局限于对于系统本身的再输入，而现在我所做的尝试则是要真正对系统外界实现输出，我预计这个过程将会是很复杂而困难的，如何去实现这一任务，我想应该是思考、方法、时间、效率以及毅力，相信最后是会有所收获的。 随着年龄的增长，眼中所看到的世界也在渐渐变化着，现在的我（大多数时候）早已没有了少年时代那种天真而又中二气息十足的风格，在经历过一些事情之后，或许心态变得比较平和了，对于很多事情也不再那么执着，且一笑置之吧。可能过了这么些年，一直没有变的是我对于人与世界秘密的好奇心，虽然有时候显得很可笑。此外，随着时间的推移，我想要表达自己内心一些想法的欲望也愈发强烈，加上自己刚刚学习了 \LaTeX{} 的使用，写一份文档也算是一个用作练习的契机，是的，你现在看到的这些文字都是用 \LaTeX{} 编辑的。总之，综合这许许多多的原因，最终导致了这份笔记的产生。现在写下的这些文字多少都是经由我斟酌后才呈现出来的，其中也包含了自己的许多心血，目前文档的版本也在不断更新中。其实当自己看到这些文字的时候，也会有一些小小的成就感呢哈哈。 站点配置文件 主题配置文件 站点配置文件 主题配置文件 如果我写下的这些文字能够给你带来哪怕只是微不足道的帮助或是启发你对自我、世界多了一些思考，那么我所做的这一切，于我来说就是有意义的，我的生命也因此而充满幸福和快乐！]]></content>
+      <categories>
+        <category>LaTeX</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu.16.04 系统下安装 Matlab2016]]></title>
+    <url>%2F2019%2F01%2F24%2FUbuntu_16_04_%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85_Matlab2016%2F</url>
+    <content type="text"><![CDATA[这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在 home 目录下新建一个文件夹： \begin{lstlisting}[language=]mkdir matlab\end{lstlisting}然后 cd 到你的 Matlab 安装文件所在目录，使用下列命令挂载第一个镜像文件（注意其中的 username 要根据你自己的用户名进行修改）：\begin{lstlisting}[language=]sudo mount -t auto -o loop R2016b_glnxa64_dvd1.iso /home/username/matlab/\end{lstlisting}挂载镜像文件之后，会发现文件系统多了一个盘，说明挂载成功，然后进行安装：\begin{lstlisting}[language=]cd ~sudo /home/username/matlab/install\end{lstlisting}在安装界面起始页，选择“使用文件安装密钥”，然后选择“我已有我的许可证的文件安装密钥”，输入如下序列号：09806-07443-53955-64350-21751-41297（key 在 readme.txt 中可以找到）。在安装进行到大约一半的时候，会弹出一个提示框提示插入 dvd2，这时候需要重新打开一个终端，把 dvd2 挂载到 Matlab 文件夹中：\begin{lstlisting}[language=]sudo umount /home/username/matlabsudo mount -t auto -o loop Linux/R2016b_glnxa64_dvd2.iso /home/username/matlab/\end{lstlisting}然后在对话框中点击 OK，继续安装。完成安装后取消挂载：\begin{lstlisting}[language=]sudo umount /home/username/matlab\end{lstlisting}运行 Matlab，弹出激活对话框：\begin{lstlisting}[language=]cd /usr/local/MATLAB/R2016b/binsudo ./matlab\end{lstlisting}选择用不联网的方法进行激活，加载 license_standalone.lic 文件。完成之后将 Crack 文件夹中的 R2016b/Linux/R2016b/bin/glnxa64 目录下文件复制到 /usr/local/MATLAB/R2016b/bin/glnxa64 目录下：\begin{lstlisting}[language=]sudo chmod -R 777 /usr/local/MATLABsudo cp Crack/R2016b/bin/glnxa64/libcufft.so.7.5.18 /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libinstutil.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwlmgrimpl.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwservices.so /usr/local/MATLAB/R2016b/bin/glnxa64\end{lstlisting}然后设置快捷方式：\begin{lstlisting}[language=]sudo gedit /usr/share/applications/Matlab2016b.desktop\end{lstlisting}在打开的文档中直接粘贴下面的代码：\begin{lstlisting}[language=][Desktop Entry]Encoding=UTF-8Name=Matlab 2016bComment=MatlabExec=/usr/local/MATLAB/R2016b/bin/matlab -desktopIcon=/usr/local/MATLAB/R2016b/toolbox/nnet/nnresource/icons/matlab.pngTerminal=trueStartupNotify=trueType=ApplicationCategories=Application;\end{lstlisting} \begin{flushright}更新于 2018/08/18\end{flushright} $$\sin(\alpha\pm\beta)=\sin\alpha\cdot\cos\beta\pm\cos\alpha\cdot\sin\beta$$$$\cos(\alpha\pm\beta)=\cos\alpha\cdot\cos\beta\mp\sin\alpha\cdot\sin\beta$$ $a_{5}=s$]]></content>
+      <categories>
+        <category>Ubuntu</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+        <tag>Matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World !]]></title>
+    <url>%2F2019%2F01%2F24%2FHello_World%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. This is an H1This is an H2Quick StartCreate a new post1$ hexo new “My New Post”More info: WritingRun server1$ hexo serverMore info: ServerGenerate static files1$ hexo generate This is an H3More info: GeneratingDeploy to remote sites1$ hexo deployMore info: Deployment This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus. Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisseid sem consectetuer libero luctus adipiscing. [title] [] [url] [link text]1code snippet Every interaction is both precious and an opportunity to delight. Seth GodinWelcome to Island Marketing Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake]]></content>
       <categories>
         <category>文摘</category>
       </categories>
       <tags>
         <tag>文摘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Ubuntu 系统下安装 Matlab]]></title>
-    <url>%2F2019%2F01%2F24%2FUbuntu%20%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85%20Matlab%2F</url>
-    <content type="text"><![CDATA[这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在 home 目录下新建一个文件夹：\begin{lstlisting}[language=]mkdir matlab\end{lstlisting}然后 cd 到你的 Matlab 安装文件所在目录，使用下列命令挂载第一个镜像文件（注意其中的 username 要根据你自己的用户名进行修改）：\begin{lstlisting}[language=]sudo mount -t auto -o loop R2016b_glnxa64_dvd1.iso /home/username/matlab/\end{lstlisting}挂载镜像文件之后，会发现文件系统多了一个盘，说明挂载成功，然后进行安装：\begin{lstlisting}[language=]cd ~sudo /home/username/matlab/install\end{lstlisting}在安装界面起始页，选择“使用文件安装密钥”，然后选择“我已有我的许可证的文件安装密钥”，输入如下序列号：09806-07443-53955-64350-21751-41297（key 在 readme.txt 中可以找到）。在安装进行到大约一半的时候，会弹出一个提示框提示插入 dvd2，这时候需要重新打开一个终端，把 dvd2 挂载到 Matlab 文件夹中：\begin{lstlisting}[language=]sudo umount /home/username/matlabsudo mount -t auto -o loop Linux/R2016b_glnxa64_dvd2.iso /home/username/matlab/\end{lstlisting}然后在对话框中点击 OK，继续安装。完成安装后取消挂载：\begin{lstlisting}[language=]sudo umount /home/username/matlab\end{lstlisting}运行 Matlab，弹出激活对话框：\begin{lstlisting}[language=]cd /usr/local/MATLAB/R2016b/binsudo ./matlab\end{lstlisting}选择用不联网的方法进行激活，加载 license_standalone.lic 文件。完成之后将 Crack 文件夹中的 R2016b/Linux/R2016b/bin/glnxa64 目录下文件复制到 /usr/local/MATLAB/R2016b/bin/glnxa64 目录下：\begin{lstlisting}[language=]sudo chmod -R 777 /usr/local/MATLABsudo cp Crack/R2016b/bin/glnxa64/libcufft.so.7.5.18 /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libinstutil.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwlmgrimpl.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwservices.so /usr/local/MATLAB/R2016b/bin/glnxa64\end{lstlisting}然后设置快捷方式：\begin{lstlisting}[language=]sudo gedit /usr/share/applications/Matlab2016b.desktop\end{lstlisting}在打开的文档中直接粘贴下面的代码：\begin{lstlisting}[language=][Desktop Entry]Encoding=UTF-8Name=Matlab 2016bComment=MatlabExec=/usr/local/MATLAB/R2016b/bin/matlab -desktopIcon=/usr/local/MATLAB/R2016b/toolbox/nnet/nnresource/icons/matlab.pngTerminal=trueStartupNotify=trueType=ApplicationCategories=Application;\end{lstlisting} \begin{flushright}更新于 2018/08/18\end{flushright}]]></content>
-      <categories>
-        <category>Matlab</category>
-        <category>Ubuntu</category>
-      </categories>
-      <tags>
-        <tag>Matlab</tag>
-        <tag>Ubuntu</tag>
       </tags>
   </entry>
 </search>

@@ -14,13 +14,28 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
 
 
 
@@ -81,7 +96,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '6.7.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -103,27 +118,27 @@
 
 
 
-  <meta name="description" content="这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录">
-<meta name="keywords" content="Matlab,Ubuntu">
+  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. This">
+<meta name="keywords" content="文摘">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu 系统下安装 Matlab">
-<meta property="og:url" content="https://clusterh.github.io/2019/01/24/Ubuntu 系统下安装 Matlab/index.html">
-<meta property="og:site_name" content="Cluster&#39;s Blog">
-<meta property="og:description" content="这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-24T11:47:11.111Z">
+<meta property="og:title" content="Hello World !">
+<meta property="og:url" content="https://cluster0.github.io/2019/01/24/Hello_World/index.html">
+<meta property="og:site_name" content="Cluster&#39; Home">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. This">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-01-25T12:29:03.311Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu 系统下安装 Matlab">
-<meta name="twitter:description" content="这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录">
+<meta name="twitter:title" content="Hello World !">
+<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. This">
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Cluster's Blog" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="Cluster' Home" type="application/atom+xml">
 
 
 
 
-  <link rel="canonical" href="https://clusterh.github.io/2019/01/24/Ubuntu 系统下安装 Matlab/">
+  <link rel="canonical" href="https://cluster0.github.io/2019/01/24/Hello_World/">
 
 
 
@@ -133,7 +148,7 @@
   };
 </script>
 
-  <title>Ubuntu 系统下安装 Matlab | Cluster's Blog</title>
+  <title>Hello World ! | Cluster' Home</title>
   
 
 
@@ -174,7 +189,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -192,7 +207,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Cluster's Blog</span>
+        <span class="site-title">Cluster' Home</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -205,7 +220,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -233,7 +248,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
 
   </li>
         
@@ -250,7 +265,7 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
 
   </li>
         
@@ -267,7 +282,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
 
   </li>
         
@@ -284,7 +299,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
 
   </li>
         
@@ -301,7 +316,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
 
   </li>
 
@@ -312,7 +327,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
         </li>
       
     </ul>
@@ -332,7 +347,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -382,7 +397,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://clusterh.github.io/2019/01/24/Ubuntu 系统下安装 Matlab/">
+    <link itemprop="mainEntityOfPage" href="https://cluster0.github.io/2019/01/24/Hello_World/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="2BMelon">
@@ -391,7 +406,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cluster's Blog">
+      <meta itemprop="name" content="Cluster' Home">
     </span>
 
     
@@ -399,7 +414,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Ubuntu 系统下安装 Matlab
+          <h1 class="post-title" itemprop="name headline">Hello World !
 
               
             
@@ -418,19 +433,31 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
 
               
                 
               
 
-              <time title="创建时间：2019-01-24 13:04:40 / 修改时间：19:47:11" itemprop="dateCreated datePublished" datetime="2019-01-24T13:04:40+08:00">2019-01-24</time>
+              <time title="Created: 2019-01-24 13:04:40" itemprop="dateCreated datePublished" datetime="2019-01-24T13:04:40+08:00">2019-01-24</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-01-25 20:29:03" itemprop="dateModified" datetime="2019-01-25T20:29:03+08:00">2019-01-25</time>
               
             
           </span>
@@ -444,17 +471,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Matlab/" itemprop="url" rel="index"><span itemprop="name">Matlab</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Matlab/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/文摘/" itemprop="url" rel="index"><span itemprop="name">文摘</span></a></span>
 
                 
                 
@@ -465,9 +485,32 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <a href="/2019/01/24/Hello_World/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/2019/01/24/Hello_World/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
+          
+            <span id="/2019/01/24/Hello_World/" class="leancloud_visitors" data-flag-title="Hello World !">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -489,9 +532,18 @@
       
 
       
-        <p>这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{<a href="https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在" target="_blank" rel="noopener">https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在</a> home 目录下新建一个文件夹：<br>\begin{lstlisting}[language=]<br>mkdir matlab<br>\end{lstlisting}<br>然后 cd 到你的 Matlab 安装文件所在目录，使用下列命令挂载第一个镜像文件（注意其中的 username 要根据你自己的用户名进行修改）：<br>\begin{lstlisting}[language=]<br>sudo mount -t auto -o loop R2016b_glnxa64_dvd1.iso /home/username/matlab/<br>\end{lstlisting}<br>挂载镜像文件之后，会发现文件系统多了一个盘，说明挂载成功，然后进行安装：<br>\begin{lstlisting}[language=]<br>cd ~<br>sudo /home/username/matlab/install<br>\end{lstlisting}<br>在安装界面起始页，选择“使用文件安装密钥”，然后选择“我已有我的许可证的文件安装密钥”，输入如下序列号：09806-07443-53955-64350-21751-41297（key 在 readme.txt 中可以找到）。在安装进行到大约一半的时候，会弹出一个提示框提示插入 dvd2，这时候需要重新打开一个终端，把 dvd2 挂载到 Matlab 文件夹中：<br>\begin{lstlisting}[language=]<br>sudo umount /home/username/matlab<br>sudo mount -t auto -o loop Linux/R2016b_glnxa64_dvd2.iso /home/username/matlab/<br>\end{lstlisting}<br>然后在对话框中点击 OK，继续安装。完成安装后取消挂载：<br>\begin{lstlisting}[language=]<br>sudo umount /home/username/matlab<br>\end{lstlisting}<br>运行 Matlab，弹出激活对话框：<br>\begin{lstlisting}[language=]<br>cd /usr/local/MATLAB/R2016b/bin<br>sudo ./matlab<br>\end{lstlisting}<br>选择用不联网的方法进行激活，加载 license_standalone.lic 文件。完成之后将 Crack 文件夹中的 R2016b/Linux/R2016b/bin/glnxa64 目录下文件复制到 /usr/local/MATLAB/R2016b/bin/glnxa64 目录下：<br>\begin{lstlisting}[language=]<br>sudo chmod -R 777 /usr/local/MATLAB<br>sudo cp Crack/R2016b/bin/glnxa64/libcufft.so.7.5.18 /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libinstutil.so /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libmwlmgrimpl.so /usr/local/MATLAB/R2016b/bin/glnxa64<br>sudo cp Crack/R2016b/bin/glnxa64/libmwservices.so  /usr/local/MATLAB/R2016b/bin/glnxa64<br>\end{lstlisting}<br>然后设置快捷方式：<br>\begin{lstlisting}[language=]<br>sudo gedit /usr/share/applications/Matlab2016b.desktop<br>\end{lstlisting}<br>在打开的文档中直接粘贴下面的代码：<br>\begin{lstlisting}[language=]<br>[Desktop Entry]<br>Encoding=UTF-8<br>Name=Matlab 2016b<br>Comment=Matlab<br>Exec=/usr/local/MATLAB/R2016b/bin/matlab -desktop<br>Icon=/usr/local/MATLAB/R2016b/toolbox/nnet/nnresource/icons/matlab.png<br>Terminal=true<br>StartupNotify=true<br>Type=Application<br>Categories=Application;<br>\end{lstlisting}</p>
-<p>\begin{flushright}<br>更新于 2018/08/18<br>\end{flushright}</p>
-<a id="more"></a>
+        <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>
+<h1 id="This-is-an-H1"><a href="#This-is-an-H1" class="headerlink" title="This is an H1"></a>This is an H1</h1><h2 id="This-is-an-H2"><a href="#This-is-an-H2" class="headerlink" title="This is an H2"></a>This is an H2</h2><p>Quick Start<br>Create a new post<br>1<br>$ hexo new “My New Post”<br>More info: Writing<br>Run server<br>1<br>$ hexo server<br>More info: Server<br>Generate static files<br>1<br>$ hexo generate</p>
+<h2 id="This-is-an-H3"><a href="#This-is-an-H3" class="headerlink" title="This is an H3"></a>This is an H3</h2><p>More info: Generating<br>Deploy to remote sites<br>1<br>$ hexo deploy<br>More info: Deployment</p>
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse<br>id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<figure class="highlight plain"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
+<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote>
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
 
       
     </div>
@@ -521,14 +573,14 @@
 
 <ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>2BMelon</li>
+    <strong>Post author:  </strong>2BMelon</li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
+    <strong>Post link: </strong>
     
-    <a href="https://clusterh.github.io/2019/01/24/Ubuntu 系统下安装 Matlab/" title="Ubuntu 系统下安装 Matlab">https://clusterh.github.io/2019/01/24/Ubuntu 系统下安装 Matlab/</a>
+    <a href="https://cluster0.github.io/2019/01/24/Hello_World/" title="Hello World !">https://cluster0.github.io/2019/01/24/Hello_World/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.</li>
 </ul>
 
       </div>
@@ -538,14 +590,32 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Matlab/" rel="tag"><i class="fa fa-tag"></i> Matlab</a>
-          
-            <a href="/tags/Ubuntu/" rel="tag"><i class="fa fa-tag"></i> Ubuntu</a>
+            <a href="/tags/文摘/" rel="tag"><i class="fa fa-tag"></i> 文摘</a>
           
         </div>
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+          </div>
+        
+        </div>
       
       
 
@@ -559,8 +629,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/24/hello/" rel="prev" title="hello">
-                hello <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/24/Ubuntu_16_04_系统下安装_Matlab2016/" rel="prev" title="Ubuntu.16.04 系统下安装 Matlab2016">
+                Ubuntu.16.04 系统下安装 Matlab2016 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -582,6 +652,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -606,8 +680,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -624,8 +707,8 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">日志</span>
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -644,7 +727,7 @@
                       
                     
                     <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">分类</span>
+                    <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
               
@@ -662,8 +745,10 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">标签</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
               
@@ -701,7 +786,7 @@
                   
                     
                   
-                  <a href="mailto:zh.zo@foxmai" title="E-Mail &rarr; mailto:zh.zo@foxmai" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:alpha1927.kt@gmail.com" title="E-Mail &rarr; mailto:alpha1927.kt@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -723,7 +808,7 @@
                   
                     
                   
-                  <a href="https://www.zhihu.com/people/ghostinthesnow1927/activities" title="知乎 &rarr; https://www.zhihu.com/people/ghostinthesnow1927/activities" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>知乎</a>
+                  <a href="https://www.zhihu.com/people/ghostinthesnow1927/activities" title="Zhihu &rarr; https://www.zhihu.com/people/ghostinthesnow1927/activities" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>Zhihu</a>
                 </span>
               
             </div>
@@ -757,14 +842,24 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
 
-      
-        <div class="back-to-top">
-          <i class="fa fa-arrow-up"></i>
-          
-            <span id="scrollpercent"><span>0</span>%</span>
-          
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#This-is-an-H1"><span class="nav-number">1.</span> <span class="nav-text">This is an H1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-an-H2"><span class="nav-number">1.1.</span> <span class="nav-text">This is an H2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-an-H3"><span class="nav-number">1.2.</span> <span class="nav-text">This is an H3</span></a></li></ol></li></ol></div>
+            
+
+          </div>
         </div>
+      <!--/noindex-->
+      
+
       
 
     </div>
@@ -789,7 +884,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
 
@@ -797,10 +892,29 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.7.0</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.7.0</div>
 
 
 
+
+<span class="post-meta-divider">|</span>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("01/24/2019 08:39:00"); //此处修改为建站时间或网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "已存活 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
 
         
 
@@ -816,7 +930,20 @@
     </footer>
 
     
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
     
@@ -907,6 +1034,35 @@
 
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'Y6B030pfDWjAgfgOCdg27yY4-gzGzoHsz',
+    appKey: 'WKx62EB4AuijIIT1hDIdWE6J',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true
+  });
+</script>
+
+
 
 
   
@@ -1247,6 +1403,47 @@
   
 
   
+  
+
+  
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+        flOptions.iconStyle = "box";
+      
+        flOptions.boxForm = "horizontal";
+      
+        flOptions.position = "middleRight";
+      
+        flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
 
   
 
@@ -1262,7 +1459,5 @@
 
   
 
-  
-
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
