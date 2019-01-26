@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cluster0.github.io/"/>
-  <updated>2019-01-25T07:17:47.988Z</updated>
+  <updated>2019-01-26T12:14:08.103Z</updated>
   <id>https://cluster0.github.io/</id>
   
   <author>
@@ -15,6 +15,104 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sublime Text 相关配置</title>
+    <link href="https://cluster0.github.io/2019/01/27/Sublime%20Text%20%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/"/>
+    <id>https://cluster0.github.io/2019/01/27/Sublime Text 相关配置/</id>
+    <published>2019-01-27T11:23:40.000Z</published>
+    <updated>2019-01-26T12:14:08.103Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;记录&quot;&gt;&lt;a href=&quot;#记录&quot; class=&quot;headerlink&quot; title=&quot;记录&quot;&gt;&lt;/a&gt;记录&lt;/h1&gt;&lt;p&gt;Sublime Text 是一款非常好用的编辑器，支持 Windows/Mac/Linux 系统，强烈推荐哈，我最早接触&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://cluster0.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://cluster0.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于 GitHub Pages + Hexo 搭建个人网站</title>
+    <link href="https://cluster0.github.io/2019/01/26/Github_+_Hexo_%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"/>
+    <id>https://cluster0.github.io/2019/01/26/Github_+_Hexo_搭建网站/</id>
+    <published>2019-01-26T04:52:08.000Z</published>
+    <updated>2019-01-26T14:21:56.400Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我的个人博客终于搭建起来啦 (๑•̀ㅂ•́)و✧！这里简单记录一下整个基本流程，测试环境为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS: Windows 10&lt;/li&gt;
+&lt;li&gt;Node.js: v10.15.0&lt;/li&gt;
+&lt;li&gt;Git: v2.20.1&lt;/li&gt;
+&lt;li&gt;npm:
+      
+    
+    </summary>
+    
+      <category term="GitHub" scheme="https://cluster0.github.io/categories/GitHub/"/>
+    
+    
+      <category term="Hexo" scheme="https://cluster0.github.io/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="https://cluster0.github.io/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 相关配置</title>
+    <link href="https://cluster0.github.io/2019/01/26/Hexo55/"/>
+    <id>https://cluster0.github.io/2019/01/26/Hexo55/</id>
+    <published>2019-01-26T02:38:14.000Z</published>
+    <updated>2019-01-26T03:33:09.957Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;widt
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://cluster0.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文</title>
+    <link href="https://cluster0.github.io/2019/01/25/book/"/>
+    <id>https://cluster0.github.io/2019/01/25/book/</id>
+    <published>2019-01-25T15:04:40.000Z</published>
+    <updated>2019-01-26T04:06:01.568Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find t
+      
+    
+    </summary>
+    
+      <category term="文摘" scheme="https://cluster0.github.io/categories/%E6%96%87%E6%91%98/"/>
+    
+    
+      <category term="文摘" scheme="https://cluster0.github.io/tags/%E6%96%87%E6%91%98/"/>
+    
+  </entry>
   
   <entry>
     <title>404</title>
@@ -31,17 +129,17 @@
   </entry>
   
   <entry>
-    <title>LaTeX</title>
-    <link href="https://cluster0.github.io/2019/01/24/LaTeX/"/>
-    <id>https://cluster0.github.io/2019/01/24/LaTeX/</id>
+    <title>LaTeX 的安装及配置</title>
+    <link href="https://cluster0.github.io/2019/01/24/LaTeX_%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
+    <id>https://cluster0.github.io/2019/01/24/LaTeX_的安装及配置/</id>
     <published>2019-01-24T13:37:29.000Z</published>
-    <updated>2019-01-25T11:56:01.433Z</updated>
+    <updated>2019-01-25T17:27:03.951Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;如果要问我写这样一份笔记的动机，说起来其实很简单，随着我在学习和生活过程中接触到的专业知识以及各种信息等越来越多，而自己的记忆力也算不上好，大脑在处理一些问题时也常常捉襟见肘，我愈发觉得有必要将我所接触和学习到的各种内容进行分类和整合，因为平时接触了大量的知识以及信息碎片，
+        &lt;p&gt;&lt;span id=&quot;inline-blue&quot;&gt; 站点配置文件 &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-purple&quot;&gt; 主题配置文件 &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-yellow&quot;&gt; 站点配置文件 &lt;/span&gt;&lt;br&gt;&lt;span i
       
     
     </summary>
@@ -54,11 +152,11 @@
   </entry>
   
   <entry>
-    <title>Ubuntu.16.04 系统下安装 Matlab2016</title>
-    <link href="https://cluster0.github.io/2019/01/24/Ubuntu_16_04_%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85_Matlab2016/"/>
-    <id>https://cluster0.github.io/2019/01/24/Ubuntu_16_04_系统下安装_Matlab2016/</id>
+    <title>Ubuntu.16.04 系统下安装 Matlab 2016</title>
+    <link href="https://cluster0.github.io/2019/01/24/Ubuntu_16_04_%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85_Matlab_2016/"/>
+    <id>https://cluster0.github.io/2019/01/24/Ubuntu_16_04_系统下安装_Matlab_2016/</id>
     <published>2019-01-24T06:11:54.000Z</published>
-    <updated>2019-01-25T12:28:57.204Z</updated>
+    <updated>2019-01-25T17:32:20.197Z</updated>
     
     <summary type="html">
     
@@ -83,21 +181,18 @@
     <link href="https://cluster0.github.io/2019/01/24/Hello_World/"/>
     <id>https://cluster0.github.io/2019/01/24/Hello_World/</id>
     <published>2019-01-24T05:04:40.000Z</published>
-    <updated>2019-01-25T12:29:03.311Z</updated>
+    <updated>2019-01-26T05:33:56.937Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find t
+        &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;人生乃是一面镜子，&lt;br&gt;从镜子里认识自己，&lt;br&gt;我要称之为头等大事，&lt;br&gt;也只是我们追求的目的！&lt;/p&gt;
+&lt;p&gt;by &lt;a href=&quot;https://en.wikipedia.org/wik
       
     
     </summary>
     
-      <category term="文摘" scheme="https://cluster0.github.io/categories/%E6%96%87%E6%91%98/"/>
-    
-    
-      <category term="文摘" scheme="https://cluster0.github.io/tags/%E6%96%87%E6%91%98/"/>
     
   </entry>
   
