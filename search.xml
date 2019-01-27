@@ -1,78 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Sublime Text 相关配置]]></title>
-    <url>%2F2019%2F01%2F27%2FSublime%20Text%20%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE%2F</url>
-    <content type="text"><![CDATA[记录Sublime Text 是一款非常好用的编辑器，支持 Windows/Mac/Linux 系统，强烈推荐哈，我最早接触]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[基于 GitHub Pages + Hexo 搭建个人网站]]></title>
-    <url>%2F2019%2F01%2F26%2FGithub_%2B_Hexo_%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%2F</url>
-    <content type="text"><![CDATA[我的个人博客终于搭建起来啦 (๑•̀ㅂ•́)و✧！这里简单记录一下整个基本流程，测试环境为： OS: Windows 10 Node.js: v10.15.0 Git: v2.20.1 npm: v6.4.1 Hexo: v3.8.0 Theme: NexT.Gemini v6.7.0 Time: 2019/01/24 前期准备开始之前可以先浏览一遍 Hexo 官方文档。 安装 Git 安装 Node.js 注册 Github 账号 安装完成后打开 cmd 命令窗口，执行以下命令，查看软件是否安装成功，若返回版本号则安装成功：12git --versionnode -v 正式开始啦本地安装 Hexo在任意目录下新建一个文件夹（可命名为，如 Blog），用来存放网站相关文件，进入 Blog 目录，右键单击，选择 Git Bash Here 进入 Shell，依次执行命令：12345npm install -g hexo-clihexo init hexocd hexonpm installhexo generate 然后执行命令以启动服务器：1hexo server 打开浏览器，在地址栏输入 http://localhost:4000/ 即可看到初始化的 Hexo 网站页面，按 Ctrl+C 可关闭服务器。 将 Hexo 部署到 GitHub PagesGitHub Pages 是开源协作社区 GitHub 提供的一个服务。登录你的 GitHub 账号，新建一个名称为 username.github.io 的 repository（必须严格按此格式命名，username 是你注册 GitHub 的账号名）。接下来配置 Git 个人信息，进入 Blog 目录，同样使用 Git Bash Here 进入 Shell，执行命令（注意修改 username 和 useremail 为你的账号名和邮箱）：12git config --global user.name &quot;username&quot;git config --global user.email &quot;useremail&quot; 生成 SSH Key，执行以下命令并回车，这时会有输入密码的提示，此密码会在之后提交项目时使用。若此处不设置密码，则提交项目时不用输入密码。若不设置密码，一直按回车键完成操作即可：1ssh-keygen -t rsa -C &quot;useremail&quot; SSH Key 生成之后默认保存在 C:/Users/username/.ssh 目录下（其中的 id_rsa 文件是私钥，id_rsa.pub 文件是公钥），进入该目录，打开 id_rsa.pub 文件，复制其中的密钥。登录 GitHub 后点击头像，选择 Settings 项，然后找到 SSH and GPG keys 项，点击 New SSH key，将复制的密钥粘贴到 Key 输入框中，点击 Add Key，至此 SSH Key 配置成功。然后测试 SSH 是否添加成功，在 shell 中执行命令：1ssh -T git@github.com 出现确认信息后输入 yes 然后回车。打开 Blog/hexo 目录下的 _config.yml 站点配置文件进行网站配置（注意修改 username，以及每一项参数的冒号后均有一个空格符），这里只列出最后一项，其他配置请参考这里：1234567# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repository: git@github.com:username/username.github.io.git branch: master message: 然后在站点文件夹根目录（安装插件均在此目录执行操作），即 Blog 目录下安装 Git 部署插件，在 shell 中执行命令：1npm install hexo-deployer-git --save 进入 Blog/hexo 目录，在 shell 中执行命令，将本地 Hexo 项目托管到 GitHub 上：123hexo cleanhexo generatehexo deploy 以上三行代码可以简写为：1hexo c &amp;&amp; hexo g &amp;&amp; hexo d 在浏览器地址栏输入 https://username.github.io，可以看到网站已经部署到 GitHub 上，可以正常访问。1打开新建的文章\source\_posts\postName.md, 其中postName是hexo new &quot;title&quot;中的title 到这里网站已初步搭建完成，然后就是如何新建网站的文章与页面了，你可以在 shell 中执行命令：12hexo new &quot;title&quot; # 生成新文章: \source\_posts\title.mdhexo new page &quot;title&quot; # 生成新的页面, 后面可在主题配置文件中配置页面 生成文章或页面的模板放在博客文件夹根目录下的 scaffolds/ 文件夹里面, 文章对应的是 post.md , 页面对应的是page.md, 草稿的是draft.md 打开新建的文章\source_posts\postName.md, 其中postName是hexo new “title”中的title 关于 Markdown 语法的说明可以参考：[Markdown 编辑器语法指南]https://segmentfault.com/markdown。 http://www.fontawesome.com.cn/ 更换 Hexo 主题接下来就进阶操作啦，Hexo 默认的主题功能较少，你可以选择其他功能丰富而且美观的主题（在[这里]https://hexo.io/themes/查看），安装主题的方式很简单, 只需要将主题文件拷贝至站点目录的 themes 目录下, 然后修改配置文件即可。在这我们使用git克隆最新版 我选择的是 NexT 12cd your-hexo-sitegit clone https://github.com/iissnan/hexo-theme-next.git 打开站点配置文件, 找到 theme 字段, 并将其值更改为 next theme: next 以下提到的站点配置文件指的是博客文件根目录下的 _config.yml, 主题配置文件是主题文件夹下的 _config.yml, 执行下面的代码命令，将 hexo 项目托管到 GitHub 上hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy注：hexo generate 可缩写为 hexo g ， hexo deploy 可缩写为 hexo d 10、如下图所示： 其他一、配置博客个人信息1、打开博客目录，如下图所示，打开 Hexo 全局配置文件 _config.yml 主题优化 注册 七牛云 账号 注册 LeanCloud 账号 站点配置文件和主题配置文件，名字都叫_config.yml，容易乱。站点配置文件，位于站点文件夹根目录内：1~/blog/_config.yml主题配置文件，位于主题文件夹根目录内：1~/blog/themes/next/_config.ymlhttps://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html https://zhuanlan.zhihu.com/p/35668237https://zhuanlan.zhihu.com/p/35989784 //其中的width=298 height=52 均改为0就看不到了，依然可以播放音乐 https://en.wikipedia.org/wiki/Nude_Descending_a_Staircase,_No._2#/media/File:Duchamp_-_Nude_Descending_a_Staircase.jpg 铅笔 上传 下载 Array.map1array.map(callback[, thisArg]) 参考链接：https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html感谢以上网站的朋友们 哈，这篇博文终于写完了，我发现写作的过程要比自己搭建网站的过程复杂，要考虑文章的整体框架、表达方式是否清晰等等问题，再加上自己刚学习这个没多久，一切都显得还比较生疏，其间还是花费了不少精力的。写这篇博文的目的不仅仅是为了个人记录，更希望可以帮助更多想要搭建个人网站的小伙伴， 开源万岁！共享万岁！ 时 2019/01/26]]></content>
-      <categories>
-        <category>GitHub</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>GitHub</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hexo 相关配置]]></title>
     <url>%2F2019%2F01%2F26%2FHexo55%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[最重要的是，学会感受生命的快乐生活已经耗尽了他们全部的光和热，以至于没有更多的生命力去温暖他人，我无法说他们是可悲的或是其他什么， default primary success info warning danger android开发吧java吧c++吧c语言神奇海螺有问题为什么不先问问隔壁Java吧呢？有问题为什么不先问问隔壁C++吧呢？有问题为什么不先问问隔壁C语言吧呢？有问题为什么不先问问神奇海螺吧呢？有问必答不知道 站点配置文件 主题配置文件 站点配置文件 主题配置文件 Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake |载入天数…载入时分秒… var now = new Date(); function createtime() { var grt= new Date("01/24/2019 08:39:00"); //此处修改为建站时间或网站上线时间 now.setTime(now.getTime()+250); days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} document.getElementById("timeDate").innerHTML = "已存活 "+dnum+" 天 "; document.getElementById("times").innerHTML = hnum + " 时 " + mnum + " 分 " + snum + " 秒"; } setInterval("createtime()",250); //其中的width=298 height=52 均改为0就看不到了，依然可以播放音乐 https://en.wikipedia.org/wiki/Nude_Descending_a_Staircase,_No._2#/media/File:Duchamp_-_Nude_Descending_a_Staircase.jpg 铅笔 上传 下载]]></content>
+      <categories>
+        <category>测试</category>
+        <category>测试</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[文]]></title>
-    <url>%2F2019%2F01%2F25%2Fbook%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 123$(document).ready(function () &#123; alert('hello world');&#125;); 1. 制作一份待办事宜 Todo 列表 支持以 PDF 格式导出文稿 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率 新增 Todo 列表功能 修复 LaTex 公式渲染问题 新增 LaTex 公式编号功能 刚刚把footer的 Copyright © All rights reserved，改变成为了 CC BY-NC-SA 4.0 协议 https://creativecommons.org/licenses/by-nc-sa/4.0/ ，这样一来就没有了苛刻的版权限制。我知道人们是崇尚自由的，尤其是在技术领域，所以我也愿意像大家一样把自由传递下去。如果我拙劣的文章帮助到了一些人，真是莫大的荣幸。但是也希望每一位读者或者访客遵守本博客的协议。 协议中包含了以下重点内容：您可以做什么可以分享：通过任何媒质/格式，来复制/分发该作品（发行、放映、展览…）。可以改编：可以重混、修改、或在该作品基础上再创作。但是做这两点之前，应该遵循署名：您必须给出姓名标注，提供指向本许可证的链接，并且说明是否相对原作者作品进行过修改。您可以以任何合理方式表述以上内容，但是不能以任何形式暗示许可人已经认可了你和你的使用行为。非商业性使用：您不得将本作品用于商业用途。相同方式共享：如果您已经重混、修改、或在该作品基础上再创作，您必须采用与原作相同的许可协议来发表。（本博客即 CC BY-NC-SA 4.0 协议。）不得附加限制：您不能增加任何法律条款或技术限制，来限制其他人去做本协议已经许可的事情。]]></content>
-      <categories>
-        <category>文摘</category>
-      </categories>
-      <tags>
-        <tag>文摘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[404]]></title>
-    <url>%2F2019%2F01%2F25%2F404%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[LaTeX 的安装及配置]]></title>
-    <url>%2F2019%2F01%2F24%2FLaTeX_%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%2F</url>
-    <content type="text"><![CDATA[站点配置文件 主题配置文件 站点配置文件 主题配置文件 Every interaction is both precious and an opportunity to delight. Seth GodinWelcome to Island Marketing Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake]]></content>
-      <categories>
-        <category>LaTeX</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Ubuntu.16.04 系统下安装 Matlab 2016]]></title>
-    <url>%2F2019%2F01%2F24%2FUbuntu_16_04_%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85_Matlab_2016%2F</url>
-    <content type="text"><![CDATA[这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件夹中包含三个文件：一个破解文件和两个镜像文件，这意味着安装途中会提示载入新的镜像文件。在安装之前将破解文件解压，然后将所有文件都拷贝到同一个目录下，在 home 目录下新建一个文件夹： \begin{lstlisting}[language=]mkdir matlab\end{lstlisting}然后 cd 到你的 Matlab 安装文件所在目录，使用下列命令挂载第一个镜像文件（注意其中的 username 要根据你自己的用户名进行修改）：\begin{lstlisting}[language=]sudo mount -t auto -o loop R2016b_glnxa64_dvd1.iso /home/username/matlab/\end{lstlisting}挂载镜像文件之后，会发现文件系统多了一个盘，说明挂载成功，然后进行安装：\begin{lstlisting}[language=]cd ~sudo /home/username/matlab/install\end{lstlisting}在安装界面起始页，选择“使用文件安装密钥”，然后选择“我已有我的许可证的文件安装密钥”，输入如下序列号：09806-07443-53955-64350-21751-41297（key 在 readme.txt 中可以找到）。在安装进行到大约一半的时候，会弹出一个提示框提示插入 dvd2，这时候需要重新打开一个终端，把 dvd2 挂载到 Matlab 文件夹中：\begin{lstlisting}[language=]sudo umount /home/username/matlabsudo mount -t auto -o loop Linux/R2016b_glnxa64_dvd2.iso /home/username/matlab/\end{lstlisting}然后在对话框中点击 OK，继续安装。完成安装后取消挂载：\begin{lstlisting}[language=]sudo umount /home/username/matlab\end{lstlisting}运行 Matlab，弹出激活对话框：\begin{lstlisting}[language=]cd /usr/local/MATLAB/R2016b/binsudo ./matlab\end{lstlisting}选择用不联网的方法进行激活，加载 license_standalone.lic 文件。完成之后将 Crack 文件夹中的 R2016b/Linux/R2016b/bin/glnxa64 目录下文件复制到 /usr/local/MATLAB/R2016b/bin/glnxa64 目录下：\begin{lstlisting}[language=]sudo chmod -R 777 /usr/local/MATLABsudo cp Crack/R2016b/bin/glnxa64/libcufft.so.7.5.18 /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libinstutil.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwlmgrimpl.so /usr/local/MATLAB/R2016b/bin/glnxa64sudo cp Crack/R2016b/bin/glnxa64/libmwservices.so /usr/local/MATLAB/R2016b/bin/glnxa64\end{lstlisting}然后设置快捷方式：\begin{lstlisting}[language=]sudo gedit /usr/share/applications/Matlab2016b.desktop\end{lstlisting}在打开的文档中直接粘贴下面的代码：\begin{lstlisting}[language=][Desktop Entry]Encoding=UTF-8Name=Matlab 2016bComment=MatlabExec=/usr/local/MATLAB/R2016b/bin/matlab -desktopIcon=/usr/local/MATLAB/R2016b/toolbox/nnet/nnresource/icons/matlab.pngTerminal=trueStartupNotify=trueType=ApplicationCategories=Application;\end{lstlisting} \begin{flushright}更新于 2018/08/18\end{flushright} $$\sin(\alpha\pm\beta)=\sin\alpha\cdot\cos\beta\pm\cos\alpha\cdot\sin\beta$$$$\cos(\alpha\pm\beta)=\cos\alpha\cdot\cos\beta\mp\sin\alpha\cdot\sin\beta$$ $a_{5}=s$]]></content>
-      <categories>
-        <category>Ubuntu</category>
-      </categories>
-      <tags>
-        <tag>Ubuntu</tag>
-        <tag>Matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World !]]></title>
-    <url>%2F2019%2F01%2F24%2FHello_World%2F</url>
-    <content type="text"><![CDATA[人生乃是一面镜子，从镜子里认识自己，我要称之为头等大事，也只是我们追求的目的！ by Friedrich Nietzsche 从何而来？和本网站的搭建过程一样，本篇文章大多是我在深夜完成的，大冬天的夜晚那个冷啊。 说起来自己很早之前就有了搭建个人网站的想法，但出于各种原因，一直拖到了现在（其实是自己懒）。搭建个人网站的目的其实很简单，随着我在学习和生活过程中接触到的专业知识以及各种信息等越来越多，而自己的记忆力也算不上好，大脑在处理一些问题时也常常捉襟见肘，我愈发觉得有必要将我所接触和学习到的各种内容进行分类和整合，因为平时接触了大量的知识以及信息碎片，如果不适当加以处理，它们只会越积越多，可能在需要的时候不但起不了很大的作用，而且会与其他新学习的知识和信息混杂在一起，让自己的知识体系无法搭建起来，也让大脑变得异常混乱，于是我就想着将这些知识和信息记录下来。 自己以前也写过不少文字，然而长久以来自己没有太过关注这些笔记，加上时间久了之后各式各样的笔记内容也混杂不堪，最后也没有多少有用的东西留存下来。我相信真正的写作可以锻炼人的思维能力，只有当自己真正动笔写一些正式的文章时才会发觉自己的思想是有多么贫瘠，逻辑链是有多么短小而脆弱，这也曾一度使我对自己过去所做的很多事情产生了怀疑，迫使我变得警觉起来。另外，形成于大脑里的想法和真正写出来的文字差别往往会很大，而从想法到文字的过程则是对自己混乱思绪的整理过程，记录成文字形式有助于梳理自己所做过的事情，也有助于训练大脑的逻辑思维能力。我觉得通过一个人的文字是可以看出其很多东西的。写书，或者说是写笔记，说起来是很简单的事情，但做起来却又是另一回事了，直到真正开始动笔我才意识到这一项任务的工作量有多么大，也很后悔自己没有早几年开始做这件事情，比如在高中或者大一的时候，不过再仔细地想一想，限于当时的环境以及自身水平等情况，这也是不太现实的事情，不过呢，现在开始这项工作也不算太晚。如果将个体看做一个系统，只输入而不输出的系统只怕算不上一个真正有价值的系统，说得夸张一点，这样的系统是世界的垃圾桶（这里并不包含恶意）。过去我虽然算是有过极少的输出，大部分也仅仅局限于对于系统本身的再输入，而现在我所做的尝试则是要真正对系统外界实现输出，我预计这个过程将会是很复杂而困难的，如何去实现这一任务，我想应该是思考、方法、时间、效率以及毅力，相信最后是会有所收获的。 随着年龄的增长，眼中所看到的世界也在渐渐变化着，现在的我（大多数时候）早已没有了少年时代那种天真而又中二气息十足的风格，在经历过一些事情之后，或许心态变得比较平和了，对于很多事情也不再那么执着，且一笑置之吧。可能过了这么些年，一直没有变的是我对于人与世界秘密的好奇心，虽然有时候显得很可笑。此外，随着时间的推移，我想要表达自己内心一些想法的欲望也愈发强烈，现在写下的这些文字多少都是经由我斟酌后才呈现出来的，其中也包含了自己的许多心血。其实当自己看到这些文字的时候，也会有一些小小的成就感呢哈哈。 如果我写下的这些文字能够给你带来哪怕只是微不足道的帮助或是启发你对自我、世界多了一些思考，那么我所做的这一切，于我来说就是有意义的，我的生命也因此而充满幸福和快乐！ 欢迎来到 2BMelon 的世界！]]></content>
   </entry>
 </search>

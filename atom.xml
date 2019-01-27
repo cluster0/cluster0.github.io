@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Cluster&#39; Home</title>
+  <title>Cluster</title>
   
-  <subtitle>最重要的是，学会感受生命的快乐</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cluster0.github.io/"/>
-  <updated>2019-01-26T12:14:08.103Z</updated>
+  <updated>2019-01-27T15:34:18.091Z</updated>
   <id>https://cluster0.github.io/</id>
   
   <author>
@@ -17,182 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Sublime Text 相关配置</title>
-    <link href="https://cluster0.github.io/2019/01/27/Sublime%20Text%20%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/"/>
-    <id>https://cluster0.github.io/2019/01/27/Sublime Text 相关配置/</id>
-    <published>2019-01-27T11:23:40.000Z</published>
-    <updated>2019-01-26T12:14:08.103Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;记录&quot;&gt;&lt;a href=&quot;#记录&quot; class=&quot;headerlink&quot; title=&quot;记录&quot;&gt;&lt;/a&gt;记录&lt;/h1&gt;&lt;p&gt;Sublime Text 是一款非常好用的编辑器，支持 Windows/Mac/Linux 系统，强烈推荐哈，我最早接触&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://cluster0.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://cluster0.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于 GitHub Pages + Hexo 搭建个人网站</title>
-    <link href="https://cluster0.github.io/2019/01/26/Github_+_Hexo_%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"/>
-    <id>https://cluster0.github.io/2019/01/26/Github_+_Hexo_搭建网站/</id>
-    <published>2019-01-26T04:52:08.000Z</published>
-    <updated>2019-01-26T14:21:56.400Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;我的个人博客终于搭建起来啦 (๑•̀ㅂ•́)و✧！这里简单记录一下整个基本流程，测试环境为：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;OS: Windows 10&lt;/li&gt;
-&lt;li&gt;Node.js: v10.15.0&lt;/li&gt;
-&lt;li&gt;Git: v2.20.1&lt;/li&gt;
-&lt;li&gt;npm:
-      
-    
-    </summary>
-    
-      <category term="GitHub" scheme="https://cluster0.github.io/categories/GitHub/"/>
-    
-    
-      <category term="Hexo" scheme="https://cluster0.github.io/tags/Hexo/"/>
-    
-      <category term="GitHub" scheme="https://cluster0.github.io/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo 相关配置</title>
     <link href="https://cluster0.github.io/2019/01/26/Hexo55/"/>
     <id>https://cluster0.github.io/2019/01/26/Hexo55/</id>
     <published>2019-01-26T02:38:14.000Z</published>
-    <updated>2019-01-26T03:33:09.957Z</updated>
+    <updated>2019-01-27T15:34:18.091Z</updated>
+    
+    <content type="html"><![CDATA[<p>最重要的是，学会感受生命的快乐<br>生活已经耗尽了他们全部的光和热，以至于没有更多的生命力去温暖他人，我无法说他们是可悲的或是其他什么，</p><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="photo_url_1" alt="photo_alt_1"></div><div class="group-picture-column" style="width: 50%;"><img src="photo_url_2" alt="photo_alt_2"></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="photo_url_3" alt="photo_alt_3"></div><div class="group-picture-column" style="width: 50%;"><img src="photo_url_4" alt="photo_alt_4"></div></div></div></div><div class="note default">            <p>default</p>          </div><div class="note primary">            <p>primary</p>          </div><div class="note success">            <p>success</p>          </div><div class="note info">            <p>info</p>          </div><div class="note warning">            <p>warning</p>          </div><div class="note danger">            <p>danger</p>          </div><div class="tabs" id="贴吧"><ul class="nav-tabs"><li class="tab active"><a href="#贴吧-1">android开发吧</a></li><li class="tab"><a href="#贴吧-2">java吧</a></li><li class="tab"><a href="#贴吧-3">c++吧</a></li><li class="tab"><a href="#贴吧-4">c语言</a></li><li class="tab"><a href="#贴吧-5">神奇海螺</a></li></ul><div class="tab-content"><div class="tab-pane active" id="贴吧-1"><p>有问题为什么不先问问隔壁Java吧呢？</p></div><div class="tab-pane" id="贴吧-2"><p>有问题为什么不先问问隔壁C++吧呢？</p></div><div class="tab-pane" id="贴吧-3"><p>有问题为什么不先问问隔壁C语言吧呢？</p></div><div class="tab-pane" id="贴吧-4"><p>有问题为什么不先问问神奇海螺吧呢？</p></div><div class="tab-pane" id="贴吧-5"><p>有问必答不知道</p></div></div></div><p><span id="inline-blue"> 站点配置文件 </span><br><span id="inline-purple"> 主题配置文件 </span><br><span id="inline-yellow"> 站点配置文件 </span><br><span id="inline-green"> 主题配置文件 </span></p><p><img src="/images/avatar.png" alt=""></p><p><img src="http://localhost:4000/avatar.png" alt=""></p><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p><footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote><p><span class="post-meta-divider">|</span><br><span id="timeDate">载入天数…</span><span id="times">载入时分秒…</span></p><script>    var now = new Date();     function createtime() {         var grt= new Date("01/24/2019 08:39:00"); //此处修改为建站时间或网站上线时间         now.setTime(now.getTime()+250);         days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);         hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);         if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);         mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}         seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);         snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}         document.getElementById("timeDate").innerHTML = "已存活 "+dnum+" 天 ";         document.getElementById("times").innerHTML = hnum + " 时 " + mnum + " 分 " + snum + " 秒";     } setInterval("createtime()",250);</script><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="http://music.163.com/outchain/player?type=2&id=32192436&auto=1&height=32&width=66"></iframe><p>//其中的width=298 height=52 均改为0就看不到了，依然可以播放音乐</p><p><a href="https://en.wikipedia.org/wiki/Nude_Descending_a_Staircase,_No._2#/media/File:Duchamp_-_Nude_Descending_a_Staircase.jpg" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Nude_Descending_a_Staircase,_No._2#/media/File:Duchamp_-_Nude_Descending_a_Staircase.jpg</a></p><ul><li><i class="fa fa-pencil"></i> 铅笔</li><li><i class="fa fa-cloud-upload"></i> 上传</li><li><i class="fa fa-download"></i> 下载</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;widt
+        &lt;p&gt;最重要的是，学会感受生命的快乐&lt;br&gt;生活已经耗尽了他们全部的光和热，以至于没有更多的生命力去温暖他人，我无法说他们是可悲的或是其他什么，&lt;/p&gt;
+&lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;
       
     
     </summary>
+    
+      <category term="测试" scheme="https://cluster0.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="测试" scheme="https://cluster0.github.io/categories/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/"/>
     
     
       <category term="Hexo" scheme="https://cluster0.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>文</title>
-    <link href="https://cluster0.github.io/2019/01/25/book/"/>
-    <id>https://cluster0.github.io/2019/01/25/book/</id>
-    <published>2019-01-25T15:04:40.000Z</published>
-    <updated>2019-01-26T04:06:01.568Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find t
-      
-    
-    </summary>
-    
-      <category term="文摘" scheme="https://cluster0.github.io/categories/%E6%96%87%E6%91%98/"/>
-    
-    
-      <category term="文摘" scheme="https://cluster0.github.io/tags/%E6%96%87%E6%91%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>404</title>
-    <link href="https://cluster0.github.io/2019/01/25/404/"/>
-    <id>https://cluster0.github.io/2019/01/25/404/</id>
-    <published>2019-01-25T07:17:47.000Z</published>
-    <updated>2019-01-25T07:17:47.988Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>LaTeX 的安装及配置</title>
-    <link href="https://cluster0.github.io/2019/01/24/LaTeX_%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
-    <id>https://cluster0.github.io/2019/01/24/LaTeX_的安装及配置/</id>
-    <published>2019-01-24T13:37:29.000Z</published>
-    <updated>2019-01-25T17:27:03.951Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;span id=&quot;inline-blue&quot;&gt; 站点配置文件 &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-purple&quot;&gt; 主题配置文件 &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-yellow&quot;&gt; 站点配置文件 &lt;/span&gt;&lt;br&gt;&lt;span i
-      
-    
-    </summary>
-    
-      <category term="LaTeX" scheme="https://cluster0.github.io/categories/LaTeX/"/>
-    
-    
-      <category term="LaTeX" scheme="https://cluster0.github.io/tags/LaTeX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu.16.04 系统下安装 Matlab 2016</title>
-    <link href="https://cluster0.github.io/2019/01/24/Ubuntu_16_04_%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85_Matlab_2016/"/>
-    <id>https://cluster0.github.io/2019/01/24/Ubuntu_16_04_系统下安装_Matlab_2016/</id>
-    <published>2019-01-24T06:11:54.000Z</published>
-    <updated>2019-01-25T17:32:20.197Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这里介绍在 Ubuntu16.04 系统上安装 Matlab 2016b 的操作步骤。首先找到一份 Matlab for Linux 安装包文件，你可以从\href{&lt;a href=&quot;https://pan.baidu.com/s/1mi0PRqK}{这里下载}，下载后文件
-      
-    
-    </summary>
-    
-      <category term="Ubuntu" scheme="https://cluster0.github.io/categories/Ubuntu/"/>
-    
-    
-      <category term="Ubuntu" scheme="https://cluster0.github.io/tags/Ubuntu/"/>
-    
-      <category term="Matlab" scheme="https://cluster0.github.io/tags/Matlab/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World !</title>
-    <link href="https://cluster0.github.io/2019/01/24/Hello_World/"/>
-    <id>https://cluster0.github.io/2019/01/24/Hello_World/</id>
-    <published>2019-01-24T05:04:40.000Z</published>
-    <updated>2019-01-26T05:33:56.937Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;人生乃是一面镜子，&lt;br&gt;从镜子里认识自己，&lt;br&gt;我要称之为头等大事，&lt;br&gt;也只是我们追求的目的！&lt;/p&gt;
-&lt;p&gt;by &lt;a href=&quot;https://en.wikipedia.org/wik
-      
-    
-    </summary>
-    
     
   </entry>
   
